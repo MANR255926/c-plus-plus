@@ -31,9 +31,9 @@ void Output_menu()
     cout << "\n----------------------------------------------------------------\n";
     cout << "\n\t\t **Hotel Data**\n";
     cout << "Total number of rooms : " << TotalRooms << endl;
-    cout << "\nNumber of A type rooms : " << RoomsA << "\t& prices : " << A_price << endl;
-    cout << "Number of B type rooms : " << RoomsB << "\t& prices : " << B_price << endl;
-    cout << "Number of C type rooms : " << RoomsC << "\t& prices : " << C_price << endl;
+    cout << "\nNumber of VIP type rooms : " << RoomsA << "\t& prices : " << A_price << endl;
+    cout << "Number of MIDRANGE type rooms : " << RoomsB << "\t& prices : " << B_price << endl;
+    cout << "Number of ECONOMY type rooms : " << RoomsC << "\t& prices : " << C_price << endl;
     cout << "\n----------------------------------------------------------------\n";
 
 
@@ -50,16 +50,16 @@ void Input_menu()
 
     cout << "\nInput Total number of rooms that we have in our hotel : ";
     cin >> TotalRooms ;
-    cout << "\nInput A type of rooms that we have in our hotel : ";
+    cout << "\nInput VIP type of rooms that we have in our hotel : ";
     cin >> RoomsA ;
     cout << "Enter price of this type : ";
     cin >> A_price ;
-    cout << "\nInput B type of rooms that we have in our hotel : ";
+    cout << "\nInput MIDRANGE type of rooms that we have in our hotel : ";
     cin >> RoomsB ;
     cout << "Enter price of this type : ";
     cin >> B_price ;
     RoomsC = TotalRooms - (RoomsA + RoomsB) ;
-    cout << "\nEnter price of C type Room : ";
+    cout << "\nEnter price of ECONOMY type Room : ";
     cin >> C_price ;
 
     if(TotalRooms == RoomsA + RoomsB + RoomsC && 
@@ -87,9 +87,9 @@ void book_menu()
 {
     cout << "\n----------------------------------------------------------------\n";
     cout << "\n\t\t **Book a room**\n";
-    cout << "1. Book A type rooms\n";
-    cout << "2. Book B type rooms\n";
-    cout << "3. Book C type rooms\n";
+    cout << "1. Book VIP type rooms\n";
+    cout << "2. Book MIDRANGE type rooms\n";
+    cout << "3. Book ECONOMY type rooms\n";
     cout << "4. Update prices\n";
     cout << "5. Information Regarding Sales and Unbooked Rooms\n";
     cout << "6. Exit\n";
@@ -105,9 +105,9 @@ void PriceUpdate()
 
     update_option:
     cout << "\n\t\t **Update Prices**\n";
-    cout << "1. Update A type room prices\n";
-    cout << "2. Update B type room prices\n";
-    cout << "3. Update C type room prices\n";
+    cout << "1. Update VIP type room prices\n";
+    cout << "2. Update MIDRANGE type room prices\n";
+    cout << "3. Update ECONOMY type room prices\n";
     cout << "\nEnter your choice : ";
     cin >> option;
 
