@@ -14,15 +14,15 @@ user_reenter_input:
     if (user <= 3 && user >= 1)
     {
         if (user == compter)
-            cout << "It's a tie!" << " user choice : " << user << " Computer choice : " << compter << endl;
+            cout << "\nIt's a tie!\n" << " user choice : " << user << " Computer choice : " << compter << endl;
         else if (user == 1 && compter == 3)
-            cout << "User wins!" << " user choice : " << user <<"comuters choic : "<< compter << endl;
+            cout << "\nUser wins!\n" << " user choice : " << user <<" computers choic : "<< compter << endl;
         else if (user == 2 && compter == 1)
-            cout << "User wins!" << " user choice : " << user <<"comuters choic : "<< compter << endl;
+            cout << "\nUser wins!\n" << " user choice : " << user <<" computers choic : "<< compter << endl;
         else if (user == 3 && compter == 2)
-            cout << "User wins!" << " user choice : " << user <<"comuters choic : "<< compter << endl;
+            cout << "\nUser wins!\n" << " user choice : " << user <<" computers choic : "<< compter << endl;
         else
-            cout << "Computer wins!" << " user choice : " << user << " Computer choice : " << compter << endl;
+            cout << "\nComputer wins!\n" << " user choice : " << user << " Computer choice : " << compter << endl;
     }
     goto user_reenter_input;
 }
