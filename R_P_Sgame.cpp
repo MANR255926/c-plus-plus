@@ -7,6 +7,7 @@ int main()
     int user, compter;
 user_reenter_input:
     cout << endl;
+    cout << "1:Rock, 2:Paper, 3:Scissors" << endl;
     cout << "User Enter the number : ";
     cin >> user;
     compter = rand() % 3 + 1; // Pick radome number from 1 to 3
