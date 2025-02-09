@@ -1,34 +1,36 @@
 #include <iostream>
-#include <limits.h> // for INT_MIN
 using namespace std;
+int main()
 
-int main() {
-    int arr[] = {10, 20, 30, 25, 35,34};
-    int size = sizeof(arr) / sizeof(arr[0]);
-
-    int first = INT_MIN, second = INT_MIN;
-
-    for (int i = 0; i < size; i++)
+{
+    int arr[5] = {91, 22, 43, 44, 5};
+    int temp = 0;
+    cout << "\nOriginal Array: ";
+    
+    for (int i = 0; i < 5; i++)
     {
-        if (arr[i] > first)
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+
+
+    for (int i = 0; i < sizeof(arr) / sizeof(arr[0]); i++)
+    {
+        for (int j = 0; j < sizeof(arr) / sizeof(arr[0]); j++)
         {
-            second = first;
-            first = arr[i];
-        } 
-        else if (arr[i] > second && arr[i] != first)
-        {
-            second = arr[i];
+            if (arr[j] < arr[j + 1])
+            {
+                temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
         }
     }
-
-    if (second == INT_MIN)
+    cout << "\nSorted Array: ";
+    for (int i = 0; i < 5; i++)
     {
-        cout << "There is no second largest element." << endl;
-    } 
-    else
-    {
-        cout << "The second largest element is: " << second << endl;
+        cout << arr[i] << " ";
     }
 
-    return 0;
+    cout << "\n\nSecond Maximum element in the array is: " << arr[1] << endl;
 }
