@@ -7,7 +7,8 @@ int main() {
     int lastElement = arr[size - 1];
     
     // Shift elements to the right
-    for (int i = size - 1; i > 0; i--) {
+    for (int i = size - 1; i > 0; i--)
+    {
         arr[i] = arr[i - 1];
     }
     
@@ -16,7 +17,8 @@ int main() {
     
     // Print the shifted array
     cout << "Array after shifting by one position to the right: ";
-    for (int i = 0; i < size; i++) {
+    for (int i = 0; i < size; i++)
+    {
         cout << arr[i] << " ";
     }
     cout << endl;
