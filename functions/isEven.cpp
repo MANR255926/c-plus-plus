@@ -19,13 +19,12 @@ int main()
     {
         if (isEven(arr[i]))
         {
-            cout << arr[i] << " is even." << endl;
+            cout << endl << arr[i] << " is even." << endl;
         } 
         else
         {
-            cout << arr[i] << " is odd." << endl;
+            cout << endl << arr[i] << " is odd." << endl;
         }
     }
-    
     return 0;
 }

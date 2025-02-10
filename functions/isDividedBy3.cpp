@@ -19,11 +19,11 @@ int main()
     {
         if (isDivisibleBy3(numbers[i]))
         {
-            cout << numbers[i] << " is divisible by 3." << endl;
+            cout << endl << numbers[i] << " is divisible by 3." << endl;
         }
         else
         {
-            cout << numbers[i] << " is not divisible by 3." << endl;
+            cout << endl << numbers[i] << " is not divisible by 3." << endl;
         }
     }
     
