@@ -15,9 +15,12 @@ int main() {
         }
     }
 
-    if (isSorted) {
+    if (isSorted)
+    {
         cout << "The array is sorted in ascending order." << endl;
-    } else {
+    }
+    else
+    {
         cout << "The array is not sorted in ascending order." << endl;
     }
 
