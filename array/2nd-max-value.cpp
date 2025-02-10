@@ -3,20 +3,20 @@ using namespace std;
 int main()
 
 {
-    int arr[5] = {91, 22, 43, 44, 5};
+    int arr[] = {91, 22, 43, 44, 5, 45, 46, 1099};
+    int size = sizeof(arr) / sizeof(arr[0]);
     int temp = 0;
     cout << "\nOriginal Array: ";
-    
-    for (int i = 0; i < 5; i++)
+
+    for (int i = 0; i < size; i++)
     {
         cout << arr[i] << " ";
     }
     cout << endl;
 
-
-    for (int i = 0; i < sizeof(arr) / sizeof(arr[0]); i++)
+    for (int i = 0; i < size; i++)
     {
-        for (int j = 0; j < sizeof(arr) / sizeof(arr[0]); j++)
+        for (int j = 0; j < size; j++)
         {
             if (arr[j] < arr[j + 1])
             {
@@ -27,7 +27,8 @@ int main()
         }
     }
     cout << "\nSorted Array: ";
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < size
+                            i++)
     {
         cout << arr[i] << " ";
     }
