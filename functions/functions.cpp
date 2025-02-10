@@ -3,8 +3,9 @@ using namespace std;
 
 int add(int x, int y)
 {
-    return x + y;    /*A function have only one return statement.
-    Or we can use more by using conditions, like :
+    return x + y;
+    /*A function have only one return statement.
+    Or we can use more by using conditions like :
 
     if (condition)
     {
@@ -16,7 +17,8 @@ int add(int x, int y)
     } */
 }
 
-void loop() //void type of function does not need return statement to return value
+//void type of function does not have return statement to return value
+void loop()
 {
     for(int i = 0; i < 10; i++)
     {
