@@ -1,3 +1,6 @@
+#include <iostream>
+using namespace std;
 
-    // Default constructor
-    Madesences() {}
+int main() {
+    cout << "C++ is working!" << endl;
+}

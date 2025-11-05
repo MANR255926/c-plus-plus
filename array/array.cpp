@@ -6,7 +6,7 @@ int main()
 {
     int array[]{9, 1, 2, 3, 4, 3}; /*it will automatically define the size of the array.if "[]" are empty.
     it is not compulsory "=" in [] between {1,2,} */
-    array[0] = 0;               // we can change the value of array like thisafter declaration of all values
+    array[0] = 0;               // we can change the value of array like this after declaration of all values
     for (int i = 0; i < sizeof(array) / sizeof(array[0]); i++)
     {
         cout << array[i] << "\t";
